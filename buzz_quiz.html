@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buzz Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="buzz_quiz.css">
+    <script type="text/javascript" src="buzz_quiz.js"></script>
+</head>
+<body>
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" id="navDiv" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Buzz Quiz</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+
+<div class="jumbotron">
+   <div class="container">
+        <h1>Are you a Geek?</h1>
+    </div>
+</div>
+
+<div class="container">
+    <table class="table">
+        <tr><td colspan="2"><h1>Which kind of drink do you like most?</h1></td></tr>
+        <tr>
+            <td><img src="cocktail.jpg" class="q1" name="cocktail"
+                    onmouseover="mouseOverImage(this, 'cocktail')"
+                    onmouseout="mouseOutImage(this, 'cocktail')"
+                    onclick="mouseSelect(this, 'cocktail')"></td>
+            <td><img src="coffee.jpg" class="q1" name="coffee"
+                    onmouseover="mouseOverImage(this, 'coffee')"
+                    onmouseout="mouseOutImage(this, 'coffee')"
+                    onclick="mouseSelect(this, 'coffee')"></td>
+            <td><img src="smoothie.jpg" class="q1" name="smoothie"
+                     onmouseover="mouseOverImage(this, 'smoothie')"
+                     onmouseout="mouseOutImage(this, 'smoothie')"
+                     onclick="mouseSelect(this, 'smoothie')"></td>
+        </tr>
+
+        <tr><td colspan="2"><h1>When do you go to bed at night?</h1></td></tr>
+        <tr>
+            <td><img src="11pm.jpg" class="q2" name="11pm"
+                     onmouseover="mouseOverImage(this, '11pm')"
+                     onmouseout="mouseOutImage(this, '11pm')"
+                     onclick="mouseSelect(this, '11pm')"></td>
+            <td><img src="12pm.jpg" class="q2" name="12pm"
+                     onmouseover="mouseOverImage(this, '12pm')"
+                     onmouseout="mouseOutImage(this, '12pm')"
+                     onclick="mouseSelect(this, '12pm')"></td>
+            <td><img src="never.jpg" class="q2" name="never"
+                     onmouseover="mouseOverImage(this, 'never')"
+                     onmouseout="mouseOutImage(this, 'never')"
+                     onclick="mouseSelect(this, 'never')"></td>
+        </tr>
+        <tr><td colspan="2"><h1>Which software do you use most frequently?</h1></td></tr>
+        <tr>
+            <td><img src="eclipse.jpg" class="q3" name="eclipse"
+                     onmouseover="mouseOverImage(this, 'eclipse')"
+                     onmouseout="mouseOutImage(this, 'eclipse')"
+                     onclick="mouseSelect(this, 'eclipse')"></td>
+            <td><img src="ps.jpg" class="q3" name="ps"
+                     onmouseover="mouseOverImage(this, 'ps')"
+                     onmouseout="mouseOutImage(this, 'ps')"
+                     onclick="mouseSelect(this, 'ps')"></td>
+            <td><img src="word.jpg" class="q3" name="word"
+                     onmouseover="mouseOverImage(this, 'word')"
+                     onmouseout="mouseOutImage(this, 'word')"
+                     onclick="mouseSelect(this, 'word')"></td>
+        </tr>
+    </table>
+
+    <div id="buttonDiv">
+    <button id="submit" class="btn btn-warning btn-lg" value="Are you a Geek?" onclick="result()">Are you a Geek?</button>
+    </div>
+
+    <div id="result"></div>
+
+    <div class="footer">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <hr/>
+        <p>&copy; Jiaying Yu 2014</p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
