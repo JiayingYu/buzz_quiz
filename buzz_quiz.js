@@ -5,12 +5,9 @@ var imageList = new Array("cocktail", "coffee", "smoothie", "11pm", "12pm", "nev
 var selected = new Array;
 var scores = {"cocktail":0, "coffee":2, "smoothie":5, "11pm":2, "12pm":6, "never":9, "eclipse":5, "ps":3, "word":0 };
 
-//var output = "";
 for (var i = 0; i < imageList.length; i++) {
     selected[imageList[i]] = false;
-//    output += imageList[i] + ":" + selected[imageList[i]] + "\n";
 }
-//alert(output);
 
 function mouseOverImage(currentImage, imageName) {
     currentImage.src = imageName + 'Check.jpg';

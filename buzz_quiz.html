@@ -34,13 +34,15 @@
 <div class="jumbotron">
    <div class="container">
         <h1>Are you a Geek?</h1>
+       <P>Complete the buzz quiz to see the result</P>
+       <hr id="headerBottom">
     </div>
 </div>
 
 <div class="container">
-    <table class="table">
-        <tr><td colspan="2"><h1>Which kind of drink do you like most?</h1></td></tr>
-        <tr>
+    <table class="table" id="quizTable">
+        <tr><td colspan="3"><h1>Which kind of drink do you like most?</h1></td></tr>
+        <tr class="row">
             <td><img src="cocktail.jpg" class="q1" name="cocktail"
                     onmouseover="mouseOverImage(this, 'cocktail')"
                     onmouseout="mouseOutImage(this, 'cocktail')"
@@ -54,9 +56,8 @@
                      onmouseout="mouseOutImage(this, 'smoothie')"
                      onclick="mouseSelect(this, 'smoothie')"></td>
         </tr>
-
-        <tr><td colspan="2"><h1>When do you go to bed at night?</h1></td></tr>
-        <tr>
+        <tr><td colspan="3"><h1>When do you go to bed at night?</h1></td></tr>
+        <tr class="row">
             <td><img src="11pm.jpg" class="q2" name="11pm"
                      onmouseover="mouseOverImage(this, '11pm')"
                      onmouseout="mouseOutImage(this, '11pm')"
@@ -70,8 +71,9 @@
                      onmouseout="mouseOutImage(this, 'never')"
                      onclick="mouseSelect(this, 'never')"></td>
         </tr>
-        <tr><td colspan="2"><h1>Which software do you use most frequently?</h1></td></tr>
-        <tr>
+
+        <tr><td colspan="3"><h1>Which software do you use most frequently?</h1></td></tr>
+        <tr class="row">
             <td><img src="eclipse.jpg" class="q3" name="eclipse"
                      onmouseover="mouseOverImage(this, 'eclipse')"
                      onmouseout="mouseOutImage(this, 'eclipse')"
@@ -88,7 +90,7 @@
     </table>
 
     <div id="buttonDiv">
-    <button id="submit" class="btn btn-warning btn-lg" value="Are you a Geek?" onclick="result()">Are you a Geek?</button>
+    <button id="submit" class="btn btn-default btn-lg" value="Are you a Geek?" onclick="result()">Are you a Geek?</button>
     </div>
 
     <div id="result"></div>

@@ -1,4 +1,13 @@
-.jumbotron {height: 200px;}
+.jumbotron {
+    height: 200px;
+    text-align: center;
+    background-color: white;}
+
+#headerBottom {
+    margin-top: 35px;
+    height:2px;
+    background-color: black;
+}
 
 #submit { margin-top: 10px;}
 
@@ -6,7 +15,10 @@
 
 #result {
     text-align: center;
-    margin-top: 20px;
-    font-size: 30px;
-    color: #5C3D99;
+    margin-top: 30px;
+    font-size: 40px;
 }
+
+#quizTable td, #quizTable th {border:0;}
+
+.row {border-bottom: 1px solid gray}
