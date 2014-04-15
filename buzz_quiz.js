@@ -10,12 +10,12 @@ for (var i = 0; i < imageList.length; i++) {
 }
 
 function mouseOverImage(currentImage, imageName) {
-    currentImage.src = imageName + 'Check.jpg';
+    currentImage.src = "img/" + imageName + 'Check.jpg';
 }
 
 function mouseOutImage(currentImage, imageName) {
     if (selected[imageName] == false) {
-    currentImage.src = imageName + ".jpg" };
+    currentImage.src = "img/" + imageName + ".jpg" };
 }
 
 function mouseSelect(currentImage, imageName) {
@@ -24,27 +24,27 @@ function mouseSelect(currentImage, imageName) {
     //unselect all images under the same question number
     for (var i = 0; i < row.length; i++) {
         var imgName = row[i].getAttribute("name");
-        row[i].src = imgName + ".jpg";
+        row[i].src = "img/" + imgName + ".jpg";
         selected[imgName] = false;
     }
 
     //select the chosen image
     selected[imageName] = true;
-    currentImage.src = imageName + 'Check.jpg';
+    currentImage.src = "img/" + imageName + 'Check.jpg';
 }
 
 function result() {
     var total = 0;
-    var output = ""
+    var output = "";
     for(var key in selected) {
         if (selected[key] == true)
             total += scores[key];
     }
     if (total >= 15)
-        output = "You are a hardcore Geek!!!"
+        output = "You are a hardcore Geek!!!";
     else if (total >= 10)
-        output = "You are an entry level Geek!!"
+        output = "You are an entry level Geek!!";
     else
-        output = "You have nothing to do with Geek!"
+        output = "You have nothing to do with Geek!";
     document.getElementById("result").innerHTML = output;
 }
